@@ -51,7 +51,7 @@ fi
 
 # step 6: build code
 xcodebuild clean install
-xcodebuild -project XcodeColors.xcodeproj -scheme XcodeColors -destination 'platform=OS X,arch=x86_64'
+xcodebuild -configuration Release -target "XcodeColors"
 
 # step 7: remove XCodeColor project
 install_end;
